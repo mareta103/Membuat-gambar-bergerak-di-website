@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animasi dan AJAX</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btnAnimasi").click(function () {
+          $("img").animate({ left: "250px", width: "150px" });
+        });
+        $("#btnAJAX").click(function () {
+          $("#tambahanTeks").load("test.html");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Animasi Web</h1>
+    <br />
+    <button id="btnAnimasi">Start Animasi</button><br /><br /><br /><br />
+    <img style="position: absolute; display: inline-block" src="maung.png" alt="gambar" />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h1>AJAX</h1>
+    <p>Tambahkan text di bawah ini</p>
+    <button id="btnAJAX">Start</button>
+    <p id="tambahanTeks">Teks</p>
+  </body>
+</html>
